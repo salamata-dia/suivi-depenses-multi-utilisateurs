@@ -28,8 +28,32 @@ Projet réalisé dans le cadre de mon cursus académique en Génie Logiciel à l
 
 ```bash
 # Cloner le projet
-git clone [https://github.com/salamata-dia/suivi-depenses-multi-utilisateurs.git](https://github.com/salamata-dia/suivi-depenses-multi-utilisateurs.git)
+git clone https://github.com/salamata-dia/suivi-depenses-multi-utilisateurs.git
 cd suivi-depenses-multi-utilisateurs
 
 # Lancer les conteneurs
 docker-compose up -d --build
+```
+
+L'application sera accessible sur `http://localhost`.
+
+### Option 2 : Installation classique (sans Docker)
+
+```bash
+# Cloner le projet
+git clone https://github.com/salamata-dia/suivi-depenses-multi-utilisateurs.git
+cd suivi-depenses-multi-utilisateurs
+
+# Installer les dépendances backend et frontend
+composer install
+npm install
+
+# Lancer le serveur de développement
+php artisan serve
+npm run dev
+```
+
+## 👩‍💻 Auteur
+
+**Salamata Dia**  
+[GitHub](https://github.com/salamata-dia)
